@@ -11,8 +11,8 @@ export default () => {
       <Switch>
         <Route exact path="/login" render={props => <Login {...props} />} />
         <Route exact path="/signup" render={props => <SignUp {...props} />} />
-        <Route exact path="/home" render={props => <Home {...props} />} />
-        <Redirect to="/login" />
+        <Route exact path="" render={props => <Home {...props} />} />
+        <Redirect to="" />
       </Switch>
     </BrowserRouter>
   );

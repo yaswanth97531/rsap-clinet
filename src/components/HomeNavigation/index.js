@@ -3,8 +3,7 @@ import { Layout, Menu, Icon, Tabs } from 'antd';
 
 import './Navigation.css';
 
-const { Header, Content, Footer, Sider } = Layout;
-const SubMenu = Menu.SubMenu;
+const { Header, Content } = Layout;
 const TabPane = Tabs.TabPane;
 
 class Nav extends Component {
@@ -17,85 +16,121 @@ class Nav extends Component {
   }
   render() {
     return (
-      <Layout style={{ minHeight: '100vh' }}>
-        <Sider
-          breakpoint = 'md'
-          collapsible
-          collapsed={this.state.collapsed}
-          onCollapse={this.onCollapse}
-        >
-          <div className="logo" />
-          <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
-            <Menu.Item key="1">
-              <Icon type="pie-chart" />
-              <span>Option 1</span>
-            </Menu.Item>
-            <Menu.Item key="2">
-              <Icon type="desktop" />
-              <span>Option 2</span>
-            </Menu.Item>
-            <SubMenu
-              key="sub1"
-              title={<span><Icon type="user" /><span>User</span></span>}
-            >
-              <Menu.Item key="3">Tom</Menu.Item>
-              <Menu.Item key="4">Bill</Menu.Item>
-              <Menu.Item key="5">Alex</Menu.Item>
-            </SubMenu>
-            <SubMenu
-              key="sub2"
-              title={<span><Icon type="team" /><span>Team</span></span>}
-            >
-              <Menu.Item key="6">Team 1</Menu.Item>
-              <Menu.Item key="8">Team 2</Menu.Item>
-            </SubMenu>
-            <Menu.Item key="9">
-              <Icon type="file" />
-              <span>File</span>
-            </Menu.Item>
-          </Menu>
-        </Sider>
-        <Layout>
-          <Header>
-            <Menu
-              className="user-menu"
-              theme="dark"
+        <Layout className="home-layout">
+          <div class="home-container">
+            <Header class="header">
+              <div>Upgrade</div>
+              <div>WeConnect</div>
+              <div>Sign In</div>
+            </Header>
+            <div class="menu-container">
+              <Menu
+              className="menu"
               mode="horizontal"
-              style={{ lineHeight: '63px' }}
-            >
-              <SubMenu
-              key="sub1"
-              title={<span><Icon type="user" /><span>User</span></span>}
-              className='user-submenu'
-              style={{ float: 'right'}}
-            >
-              <Menu.Item key="4"><span><Icon type='setting' /></span>Settings</Menu.Item>
-              <Menu.Item key="5"><span><Icon type='logout' /></span>Logout</Menu.Item>
-            </SubMenu>
-            </Menu>
-          </Header>
-          <Content style={{ margin: '0 16px' }}>
-            <Tabs>
-              <TabPane tab={
-                <span><Icon type="code" />Code Management</span>} key="1">
-                Code Management
-              </TabPane>
-              <TabPane tab={<span><Icon type="sync" />Continuous Integration</span>} key="2">
-                Continuous Integration
-              </TabPane>
-              <TabPane tab={<span><Icon type="cloud" />SAP Deployment</span>} key="3">
-                SAP Deployment
-              </TabPane>
-              <TabPane tab={<span><Icon type="user" />User Management</span>} key="4">
-                User Management
-              </TabPane>
-            </Tabs>
-          </Content>
-          <Footer style={{ textAlign: 'center' }}>
-            R-SAP ©2018 Created by RSRIT
-          </Footer>
+              defaultSelectedKeys={['1']}
+              >
+              <Menu.Item key="1">nav 1</Menu.Item>
+              <Menu.Item key="2">nav 2</Menu.Item>
+              <Menu.Item key="3">nav 3</Menu.Item>
+              </Menu>
+            </div>
+            <div className="hot-posts-container">
+              <div class="post1">post1</div>
+              <div class="post2">post2</div>
+              <div class="post3">post3</div>
+            </div>
+            <div class="posts-container">
+              <div class="recent-posts">
+                <p>recent post 1</p>
+                <p>recent post 2</p>
+                <p>recent post 3</p>
+                <p>recent post 4</p>
+                <p>recent post 5</p>
+                <p>recent post 6</p>
+                <p>recent post 7</p>
+                <p>recent post 8</p>
+                <p>recent post 9</p>
+                <p>recent post 10</p>
+                <p>recent post 11</p>
+                <p>recent post 12</p>
+                <p>recent post 13</p>
+                <p>recent post 14</p>
+                <p>recent post 15</p>
+                <p>recent post 16</p>
+                <p>recent post 17</p>
+                <p>recent post 18</p>
+                <p>recent post 1</p>
+                <p>recent post 2</p>
+                <p>recent post 3</p>
+                <p>recent post 4</p>
+                <p>recent post 5</p>
+                <p>recent post 6</p>
+                <p>recent post 7</p>
+                <p>recent post 8</p>
+                <p>recent post 9</p>
+                <p>recent post 10</p>
+                <p>recent post 11</p>
+                <p>recent post 12</p>
+                <p>recent post 13</p>
+                <p>recent post 14</p>
+                <p>recent post 15</p>
+                <p>recent post 16</p>
+                <p>recent post 17</p>
+                <p>recent post 18</p>
+                <p>recent post 1</p>
+                <p>recent post 2</p>
+                <p>recent post 3</p>
+                <p>recent post 4</p>
+                <p>recent post 5</p>
+                <p>recent post 6</p>
+                <p>recent post 7</p>
+                <p>recent post 8</p>
+                <p>recent post 9</p>
+                <p>recent post 10</p>
+                <p>recent post 11</p>
+                <p>recent post 12</p>
+                <p>recent post 13</p>
+                <p>recent post 14</p>
+                <p>recent post 15</p>
+                <p>recent post 16</p>
+                <p>recent post 17</p>
+                <p>recent post 18</p>
+                <p>recent post 1</p>
+                <p>recent post 2</p>
+                <p>recent post 3</p>
+                <p>recent post 4</p>
+                <p>recent post 5</p>
+                <p>recent post 6</p>
+                <p>recent post 7</p>
+                <p>recent post 8</p>
+                <p>recent post 9</p>
+                <p>recent post 10</p>
+                <p>recent post 11</p>
+                <p>recent post 12</p>
+                <p>recent post 13</p>
+                <p>recent post 14</p>
+                <p>recent post 15</p>
+                <p>recent post 16</p>
+                <p>recent post 17</p>
+                <p>recent post 18</p>
+              </div>
+              <div class="side-posts">
+                <div class="network-posts">
+                  <p>Your network post 1</p>
+                  <p>Your network post 2</p>
+                </div>
+                <div class="bookmark-posts">
+                  <p>Your bookmark post 1</p>
+                  <p>Your bookmark post 2</p>
+                  <p>Your bookmark post 3</p>
+                  <p>Your bookmark post 4</p>
+                  <p>Your bookmark post 5</p>
+                  <p>Your bookmark post 6</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </Layout>
-      </Layout>
     );
   }
 }
